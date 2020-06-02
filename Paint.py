@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.graphics import Line
 
-class DrawInput(Widget):
+class Draw(Widget):
 
     def on_touch_down(self, touch):
         print(touch)
@@ -17,10 +17,10 @@ class DrawInput(Widget):
         print("RELEASED!",touch)
 
 
-class SimpleKivy4(App):
+class SimplePaintTool(App):
 
     def build(self):
-        return DrawInput()
+        return Draw()
 
 if __name__ == "__main__":
-    SimpleKivy4().run()
+    SimplePaintTool().run()
